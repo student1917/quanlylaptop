@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txt_TimKiemLT_ManHinh = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,7 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_TimKiem_Laptop = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_Show_Laptop = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_Add_Laptop = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_Laptop = new Guna.UI2.WinForms.Guna2DataGridView();
             this.MaLT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,6 +90,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Laptop)).BeginInit();
@@ -109,6 +110,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.guna2TextBox1);
             this.tabPage1.Controls.Add(this.txt_TimKiemLT_ManHinh);
             this.tabPage1.Controls.Add(this.txt_TimKiemLT_MauSac);
             this.tabPage1.Controls.Add(this.txt_TimKiemLT_KhoiLuong);
@@ -120,7 +122,7 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.btn_TimKiem_Laptop);
-            this.tabPage1.Controls.Add(this.btn_Show_Laptop);
+            this.tabPage1.Controls.Add(this.btn_Add_Laptop);
             this.tabPage1.Controls.Add(this.dgv_Laptop);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
             this.tabPage1.Name = "tabPage1";
@@ -302,22 +304,22 @@
             this.btn_TimKiem_Laptop.TabIndex = 20;
             this.btn_TimKiem_Laptop.Text = "Tìm";
             // 
-            // btn_Show_Laptop
+            // btn_Add_Laptop
             // 
-            this.btn_Show_Laptop.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Show_Laptop.BorderColor = System.Drawing.Color.IndianRed;
-            this.btn_Show_Laptop.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Show_Laptop.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_Show_Laptop.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_Show_Laptop.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Show_Laptop.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Show_Laptop.ForeColor = System.Drawing.Color.White;
-            this.btn_Show_Laptop.Location = new System.Drawing.Point(8, 76);
-            this.btn_Show_Laptop.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Show_Laptop.Name = "btn_Show_Laptop";
-            this.btn_Show_Laptop.Size = new System.Drawing.Size(240, 52);
-            this.btn_Show_Laptop.TabIndex = 18;
-            this.btn_Show_Laptop.Text = "Hiển thị thông tin";
+            this.btn_Add_Laptop.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Add_Laptop.BorderColor = System.Drawing.Color.IndianRed;
+            this.btn_Add_Laptop.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Add_Laptop.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_Add_Laptop.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_Add_Laptop.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_Add_Laptop.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Add_Laptop.ForeColor = System.Drawing.Color.White;
+            this.btn_Add_Laptop.Location = new System.Drawing.Point(8, 76);
+            this.btn_Add_Laptop.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Add_Laptop.Name = "btn_Add_Laptop";
+            this.btn_Add_Laptop.Size = new System.Drawing.Size(240, 52);
+            this.btn_Add_Laptop.TabIndex = 18;
+            this.btn_Add_Laptop.Text = "+ Thêm laptop";
             // 
             // dgv_Laptop
             // 
@@ -325,18 +327,18 @@
             this.dgv_Laptop.AllowUserToDeleteRows = false;
             this.dgv_Laptop.AllowUserToResizeColumns = false;
             this.dgv_Laptop.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgv_Laptop.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_Laptop.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Laptop.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_Laptop.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Laptop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Laptop.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Laptop.ColumnHeadersHeight = 80;
             this.dgv_Laptop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgv_Laptop.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -353,14 +355,14 @@
             this.CPU,
             this.Pin,
             this.QuaTangKem});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Laptop.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Laptop.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Laptop.Location = new System.Drawing.Point(16, 250);
             this.dgv_Laptop.Name = "dgv_Laptop";
             this.dgv_Laptop.RowHeadersVisible = false;
@@ -956,6 +958,26 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Mã Laptop";
             // 
+            // guna2TextBox1
+            // 
+            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox1.DefaultText = "";
+            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox1.Location = new System.Drawing.Point(809, 76);
+            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox1.Name = "guna2TextBox1";
+            this.guna2TextBox1.PasswordChar = '\0';
+            this.guna2TextBox1.PlaceholderText = "";
+            this.guna2TextBox1.SelectedText = "";
+            this.guna2TextBox1.Size = new System.Drawing.Size(353, 49);
+            this.guna2TextBox1.TabIndex = 38;
+            // 
             // Form_Laptop
             // 
             this.ClientSize = new System.Drawing.Size(1385, 892);
@@ -981,7 +1003,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_Laptop;
         private Guna.UI2.WinForms.Guna2Button btn_TimKiem_Laptop;
-        private Guna.UI2.WinForms.Guna2Button btn_Show_Laptop;
+        private Guna.UI2.WinForms.Guna2Button btn_Add_Laptop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -1035,5 +1057,6 @@
         private System.Windows.Forms.Label label19;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
     }
 }
