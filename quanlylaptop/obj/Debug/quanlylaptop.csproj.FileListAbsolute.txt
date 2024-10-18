@@ -1,0 +1,12 @@
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.csproj.AssemblyReference.cache
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_Laptop.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Properties.Resources.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.csproj.GenerateResource.cache
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.csproj.CoreCompileInputs.cache
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\bin\Debug\quanlylaptop.exe.config
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\bin\Debug\quanlylaptop.exe
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\bin\Debug\quanlylaptop.pdb
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\bin\Debug\Guna.UI2.dll
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.csproj.CopyComplete
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.exe
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.pdb
