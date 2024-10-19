@@ -17,3 +17,8 @@ C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_
 C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_KhachHang.resources
 C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_NhaCungCap.resources
 C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_PhieuNhapKho.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_HoatDongBH.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_ChiTietHoaDon.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_ChiTietPhieuNhap.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_GoiBaoHanh.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_TraGop.resources

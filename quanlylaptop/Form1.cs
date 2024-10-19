@@ -45,9 +45,41 @@ namespace quanlylaptop
         private void btn_KhachHang_Click(object sender, EventArgs e)
         {
             container(new Form_KhachHang());
+        }    
+
+        private void btn_CTPN_Click(object sender, EventArgs e)
+        {
+            container(new Form_ChiTietPhieuNhap());
         }
 
+        private void btn_CTHD_Click(object sender, EventArgs e)
+        {
+            container(new Form_ChiTietHoaDon());
+        }
 
+        private void btn_TraGop_Click(object sender, EventArgs e)
+        {
+            container(new Form_TraGop());
+        }
+
+        private void btn_HDBH_Click(object sender, EventArgs e)
+        {
+            container(new Form_HoatDongBH());
+        }
+        private void btn_BaoHanh_Click(object sender, EventArgs e)
+        {
+            container(new Form_GoiBaoHanh());
+        }
+
+        private void btn_ThongKe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_DangXuat_Click(object sender, EventArgs e)
+        {
+
+        }
         //
         private void container(object _form)
         {
@@ -65,5 +97,7 @@ namespace quanlylaptop
         {
             this.Close();
         }
+
+
     }
 }

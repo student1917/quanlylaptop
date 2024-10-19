@@ -35,7 +35,7 @@
             this.btn_DangXuat = new FontAwesome.Sharp.IconButton();
             this.btn_CaiDat = new FontAwesome.Sharp.IconButton();
             this.btn_ThongKe = new FontAwesome.Sharp.IconButton();
-            this.btn_NangCap = new FontAwesome.Sharp.IconButton();
+            this.btn_HDBH = new FontAwesome.Sharp.IconButton();
             this.btn_BaoHanh = new FontAwesome.Sharp.IconButton();
             this.btn_TraGop = new FontAwesome.Sharp.IconButton();
             this.btn_KhachHang = new FontAwesome.Sharp.IconButton();
@@ -63,7 +63,7 @@
             this.panel1.Controls.Add(this.btn_DangXuat);
             this.panel1.Controls.Add(this.btn_CaiDat);
             this.panel1.Controls.Add(this.btn_ThongKe);
-            this.panel1.Controls.Add(this.btn_NangCap);
+            this.panel1.Controls.Add(this.btn_HDBH);
             this.panel1.Controls.Add(this.btn_BaoHanh);
             this.panel1.Controls.Add(this.btn_TraGop);
             this.panel1.Controls.Add(this.btn_KhachHang);
@@ -140,6 +140,7 @@
             this.btn_DangXuat.TabIndex = 0;
             this.btn_DangXuat.Text = "Đăng xuất";
             this.btn_DangXuat.UseVisualStyleBackColor = true;
+            this.btn_DangXuat.Click += new System.EventHandler(this.btn_DangXuat_Click);
             // 
             // btn_CaiDat
             // 
@@ -176,24 +177,26 @@
             this.btn_ThongKe.TabIndex = 0;
             this.btn_ThongKe.Text = "Thống kê";
             this.btn_ThongKe.UseVisualStyleBackColor = true;
+            this.btn_ThongKe.Click += new System.EventHandler(this.btn_ThongKe_Click);
             // 
-            // btn_NangCap
+            // btn_HDBH
             // 
-            this.btn_NangCap.FlatAppearance.BorderSize = 0;
-            this.btn_NangCap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_NangCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_NangCap.ForeColor = System.Drawing.Color.White;
-            this.btn_NangCap.IconChar = FontAwesome.Sharp.IconChar.CircleUp;
-            this.btn_NangCap.IconColor = System.Drawing.Color.White;
-            this.btn_NangCap.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_NangCap.IconSize = 36;
-            this.btn_NangCap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_NangCap.Location = new System.Drawing.Point(3, 612);
-            this.btn_NangCap.Name = "btn_NangCap";
-            this.btn_NangCap.Size = new System.Drawing.Size(286, 44);
-            this.btn_NangCap.TabIndex = 0;
-            this.btn_NangCap.Text = "Nâng cấp";
-            this.btn_NangCap.UseVisualStyleBackColor = true;
+            this.btn_HDBH.FlatAppearance.BorderSize = 0;
+            this.btn_HDBH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_HDBH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_HDBH.ForeColor = System.Drawing.Color.White;
+            this.btn_HDBH.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            this.btn_HDBH.IconColor = System.Drawing.Color.White;
+            this.btn_HDBH.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_HDBH.IconSize = 36;
+            this.btn_HDBH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_HDBH.Location = new System.Drawing.Point(3, 612);
+            this.btn_HDBH.Name = "btn_HDBH";
+            this.btn_HDBH.Size = new System.Drawing.Size(286, 44);
+            this.btn_HDBH.TabIndex = 0;
+            this.btn_HDBH.Text = "Hoạt Động Bảo Hành";
+            this.btn_HDBH.UseVisualStyleBackColor = true;
+            this.btn_HDBH.Click += new System.EventHandler(this.btn_HDBH_Click);
             // 
             // btn_BaoHanh
             // 
@@ -212,6 +215,7 @@
             this.btn_BaoHanh.TabIndex = 0;
             this.btn_BaoHanh.Text = "Bảo hành";
             this.btn_BaoHanh.UseVisualStyleBackColor = true;
+            this.btn_BaoHanh.Click += new System.EventHandler(this.btn_BaoHanh_Click);
             // 
             // btn_TraGop
             // 
@@ -230,6 +234,7 @@
             this.btn_TraGop.TabIndex = 0;
             this.btn_TraGop.Text = "Trả góp";
             this.btn_TraGop.UseVisualStyleBackColor = true;
+            this.btn_TraGop.Click += new System.EventHandler(this.btn_TraGop_Click);
             // 
             // btn_KhachHang
             // 
@@ -267,6 +272,7 @@
             this.btn_CTHD.TabIndex = 0;
             this.btn_CTHD.Text = "Chi tiết hóa đơn";
             this.btn_CTHD.UseVisualStyleBackColor = true;
+            this.btn_CTHD.Click += new System.EventHandler(this.btn_CTHD_Click);
             // 
             // btn_HoaDon
             // 
@@ -302,8 +308,9 @@
             this.btn_CTPN.Name = "btn_CTPN";
             this.btn_CTPN.Size = new System.Drawing.Size(286, 44);
             this.btn_CTPN.TabIndex = 0;
-            this.btn_CTPN.Text = "Chi tiết phiếu nhập";
+            this.btn_CTPN.Text = "Chi tiết phiếu nhập kho";
             this.btn_CTPN.UseVisualStyleBackColor = true;
+            this.btn_CTPN.Click += new System.EventHandler(this.btn_CTPN_Click);
             // 
             // btn_PhieuNhapKho
             // 
@@ -440,7 +447,7 @@
         private FontAwesome.Sharp.IconButton btn_NhaCungCap;
         private FontAwesome.Sharp.IconButton btn_Laptop;
         private FontAwesome.Sharp.IconButton btn_ThongKe;
-        private FontAwesome.Sharp.IconButton btn_NangCap;
+        private FontAwesome.Sharp.IconButton btn_HDBH;
         private FontAwesome.Sharp.IconButton btn_BaoHanh;
         private FontAwesome.Sharp.IconButton btn_TraGop;
         private FontAwesome.Sharp.IconButton btn_KhachHang;

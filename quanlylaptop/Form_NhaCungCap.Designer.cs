@@ -33,10 +33,17 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_TimKiem_Laptop = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TimKiem_NCC = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Add_NhaCungCap = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_NhaCungCap = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThaiHopTac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label19 = new System.Windows.Forms.Label();
             this.btn_Sua_NCC = new Guna.UI2.WinForms.Guna2Button();
@@ -54,13 +61,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThaiHopTac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_NhaCungCap)).BeginInit();
@@ -83,7 +83,7 @@
             this.tabPage1.BackColor = System.Drawing.Color.White;
             this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.guna2TextBox1);
-            this.tabPage1.Controls.Add(this.btn_TimKiem_Laptop);
+            this.tabPage1.Controls.Add(this.btn_TimKiem_NCC);
             this.tabPage1.Controls.Add(this.btn_Add_NhaCungCap);
             this.tabPage1.Controls.Add(this.dgv_NhaCungCap);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
@@ -92,6 +92,17 @@
             this.tabPage1.Size = new System.Drawing.Size(1264, 831);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Information";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label4.Location = new System.Drawing.Point(460, 4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(327, 38);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Thông tin nhà cung cấp";
             // 
             // guna2TextBox1
             // 
@@ -113,23 +124,23 @@
             this.guna2TextBox1.Size = new System.Drawing.Size(353, 49);
             this.guna2TextBox1.TabIndex = 38;
             // 
-            // btn_TimKiem_Laptop
+            // btn_TimKiem_NCC
             // 
-            this.btn_TimKiem_Laptop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            this.btn_TimKiem_Laptop.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiem_Laptop.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiem_Laptop.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_TimKiem_Laptop.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_TimKiem_Laptop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btn_TimKiem_Laptop.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_TimKiem_Laptop.ForeColor = System.Drawing.Color.White;
-            this.btn_TimKiem_Laptop.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_TimKiem_Laptop.Location = new System.Drawing.Point(1173, 79);
-            this.btn_TimKiem_Laptop.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_TimKiem_Laptop.Name = "btn_TimKiem_Laptop";
-            this.btn_TimKiem_Laptop.Size = new System.Drawing.Size(87, 49);
-            this.btn_TimKiem_Laptop.TabIndex = 20;
-            this.btn_TimKiem_Laptop.Text = "Tìm";
+            this.btn_TimKiem_NCC.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.btn_TimKiem_NCC.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiem_NCC.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiem_NCC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TimKiem_NCC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TimKiem_NCC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btn_TimKiem_NCC.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_TimKiem_NCC.ForeColor = System.Drawing.Color.White;
+            this.btn_TimKiem_NCC.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_TimKiem_NCC.Location = new System.Drawing.Point(1173, 79);
+            this.btn_TimKiem_NCC.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_TimKiem_NCC.Name = "btn_TimKiem_NCC";
+            this.btn_TimKiem_NCC.Size = new System.Drawing.Size(87, 49);
+            this.btn_TimKiem_NCC.TabIndex = 20;
+            this.btn_TimKiem_NCC.Text = "Tìm";
             // 
             // btn_Add_NhaCungCap
             // 
@@ -184,7 +195,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_NhaCungCap.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_NhaCungCap.Location = new System.Drawing.Point(16, 250);
+            this.dgv_NhaCungCap.Location = new System.Drawing.Point(16, 199);
             this.dgv_NhaCungCap.Name = "dgv_NhaCungCap";
             this.dgv_NhaCungCap.RowHeadersVisible = false;
             this.dgv_NhaCungCap.RowHeadersWidth = 62;
@@ -194,7 +205,7 @@
             this.dgv_NhaCungCap.ShowCellToolTips = false;
             this.dgv_NhaCungCap.ShowEditingIcon = false;
             this.dgv_NhaCungCap.ShowRowErrors = false;
-            this.dgv_NhaCungCap.Size = new System.Drawing.Size(1240, 582);
+            this.dgv_NhaCungCap.Size = new System.Drawing.Size(1240, 633);
             this.dgv_NhaCungCap.TabIndex = 0;
             this.dgv_NhaCungCap.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_NhaCungCap.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -217,6 +228,42 @@
             this.dgv_NhaCungCap.ThemeStyle.RowsStyle.Height = 24;
             this.dgv_NhaCungCap.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_NhaCungCap.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // MaNCC
+            // 
+            this.MaNCC.HeaderText = "Mã nhà cung cấp";
+            this.MaNCC.MinimumWidth = 8;
+            this.MaNCC.Name = "MaNCC";
+            // 
+            // TenNCC
+            // 
+            this.TenNCC.HeaderText = "Tên nhà cung cấp";
+            this.TenNCC.MinimumWidth = 6;
+            this.TenNCC.Name = "TenNCC";
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            // 
+            // SDT
+            // 
+            this.SDT.HeaderText = "Số điện thoại";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            // 
+            // TrangThaiHopTac
+            // 
+            this.TrangThaiHopTac.HeaderText = "Trạng thái hợp tác";
+            this.TrangThaiHopTac.MinimumWidth = 6;
+            this.TrangThaiHopTac.Name = "TrangThaiHopTac";
             // 
             // tabPage2
             // 
@@ -480,53 +527,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Mã nhà cung cấp:";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label4.Location = new System.Drawing.Point(460, 4);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(327, 38);
-            this.label4.TabIndex = 40;
-            this.label4.Text = "Thông tin nhà cung cấp";
-            // 
-            // MaNCC
-            // 
-            this.MaNCC.HeaderText = "Mã nhà cung cấp";
-            this.MaNCC.MinimumWidth = 8;
-            this.MaNCC.Name = "MaNCC";
-            // 
-            // TenNCC
-            // 
-            this.TenNCC.HeaderText = "Tên nhà cung cấp";
-            this.TenNCC.MinimumWidth = 6;
-            this.TenNCC.Name = "TenNCC";
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            // 
-            // SDT
-            // 
-            this.SDT.HeaderText = "Số điện thoại";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            // 
-            // TrangThaiHopTac
-            // 
-            this.TrangThaiHopTac.HeaderText = "Trạng thái hợp tác";
-            this.TrangThaiHopTac.MinimumWidth = 6;
-            this.TrangThaiHopTac.Name = "TrangThaiHopTac";
-            // 
             // Form_NhaCungCap
             // 
             this.ClientSize = new System.Drawing.Size(1385, 892);
@@ -550,7 +550,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_NhaCungCap;
-        private Guna.UI2.WinForms.Guna2Button btn_TimKiem_Laptop;
+        private Guna.UI2.WinForms.Guna2Button btn_TimKiem_NCC;
         private Guna.UI2.WinForms.Guna2Button btn_Add_NhaCungCap;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;

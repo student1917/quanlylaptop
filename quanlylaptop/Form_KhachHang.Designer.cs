@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_TimKiemKH_SDT = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_TimKiemKH_CCCD = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,9 +41,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_TimKiem_Laptop = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TimKiem_KhachHang = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Add_KhachHang = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_KhachHang = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoCCCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongSoTienDaGD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label19 = new System.Windows.Forms.Label();
             this.btn_Sua_KhachHang = new Guna.UI2.WinForms.Guna2Button();
@@ -60,13 +67,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoCCCD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TongSoTienDaGD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label4 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_KhachHang)).BeginInit();
@@ -95,7 +95,7 @@
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.btn_TimKiem_Laptop);
+            this.tabPage1.Controls.Add(this.btn_TimKiem_KhachHang);
             this.tabPage1.Controls.Add(this.btn_Add_KhachHang);
             this.tabPage1.Controls.Add(this.dgv_KhachHang);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
@@ -104,6 +104,17 @@
             this.tabPage1.Size = new System.Drawing.Size(1264, 831);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Information";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label4.Location = new System.Drawing.Point(460, 4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(305, 38);
+            this.label4.TabIndex = 39;
+            this.label4.Text = "Thông tin khách hàng";
             // 
             // guna2TextBox1
             // 
@@ -218,23 +229,23 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Nhập họ tên KH:";
             // 
-            // btn_TimKiem_Laptop
+            // btn_TimKiem_KhachHang
             // 
-            this.btn_TimKiem_Laptop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            this.btn_TimKiem_Laptop.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiem_Laptop.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiem_Laptop.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_TimKiem_Laptop.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_TimKiem_Laptop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btn_TimKiem_Laptop.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_TimKiem_Laptop.ForeColor = System.Drawing.Color.White;
-            this.btn_TimKiem_Laptop.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_TimKiem_Laptop.Location = new System.Drawing.Point(1169, 76);
-            this.btn_TimKiem_Laptop.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_TimKiem_Laptop.Name = "btn_TimKiem_Laptop";
-            this.btn_TimKiem_Laptop.Size = new System.Drawing.Size(87, 49);
-            this.btn_TimKiem_Laptop.TabIndex = 20;
-            this.btn_TimKiem_Laptop.Text = "Tìm";
+            this.btn_TimKiem_KhachHang.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.btn_TimKiem_KhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiem_KhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiem_KhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TimKiem_KhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TimKiem_KhachHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btn_TimKiem_KhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_TimKiem_KhachHang.ForeColor = System.Drawing.Color.White;
+            this.btn_TimKiem_KhachHang.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_TimKiem_KhachHang.Location = new System.Drawing.Point(1169, 76);
+            this.btn_TimKiem_KhachHang.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_TimKiem_KhachHang.Name = "btn_TimKiem_KhachHang";
+            this.btn_TimKiem_KhachHang.Size = new System.Drawing.Size(87, 49);
+            this.btn_TimKiem_KhachHang.TabIndex = 20;
+            this.btn_TimKiem_KhachHang.Text = "Tìm";
             // 
             // btn_Add_KhachHang
             // 
@@ -322,6 +333,42 @@
             this.dgv_KhachHang.ThemeStyle.RowsStyle.Height = 24;
             this.dgv_KhachHang.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_KhachHang.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // MaKH
+            // 
+            this.MaKH.HeaderText = "Mã khách hàng";
+            this.MaKH.MinimumWidth = 8;
+            this.MaKH.Name = "MaKH";
+            // 
+            // LoaiKH
+            // 
+            this.LoaiKH.HeaderText = "Loại khách hàng";
+            this.LoaiKH.MinimumWidth = 6;
+            this.LoaiKH.Name = "LoaiKH";
+            // 
+            // HoTenKH
+            // 
+            this.HoTenKH.HeaderText = "Họ tên khách hàng";
+            this.HoTenKH.MinimumWidth = 6;
+            this.HoTenKH.Name = "HoTenKH";
+            // 
+            // SoCCCD
+            // 
+            this.SoCCCD.HeaderText = "Số CCCD";
+            this.SoCCCD.MinimumWidth = 6;
+            this.SoCCCD.Name = "SoCCCD";
+            // 
+            // SDT
+            // 
+            this.SDT.HeaderText = "Số điện thoại";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            // 
+            // TongSoTienDaGD
+            // 
+            this.TongSoTienDaGD.HeaderText = "Tổng tiền giao dịch";
+            this.TongSoTienDaGD.MinimumWidth = 6;
+            this.TongSoTienDaGD.Name = "TongSoTienDaGD";
             // 
             // tabPage2
             // 
@@ -585,53 +632,6 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Mã khách hàng:";
             // 
-            // MaKH
-            // 
-            this.MaKH.HeaderText = "Mã khách hàng";
-            this.MaKH.MinimumWidth = 8;
-            this.MaKH.Name = "MaKH";
-            // 
-            // LoaiKH
-            // 
-            this.LoaiKH.HeaderText = "Loại khách hàng";
-            this.LoaiKH.MinimumWidth = 6;
-            this.LoaiKH.Name = "LoaiKH";
-            // 
-            // HoTenKH
-            // 
-            this.HoTenKH.HeaderText = "Họ tên khách hàng";
-            this.HoTenKH.MinimumWidth = 6;
-            this.HoTenKH.Name = "HoTenKH";
-            // 
-            // SoCCCD
-            // 
-            this.SoCCCD.HeaderText = "Số CCCD";
-            this.SoCCCD.MinimumWidth = 6;
-            this.SoCCCD.Name = "SoCCCD";
-            // 
-            // SDT
-            // 
-            this.SDT.HeaderText = "Số điện thoại";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            // 
-            // TongSoTienDaGD
-            // 
-            this.TongSoTienDaGD.HeaderText = "Tổng tiền giao dịch";
-            this.TongSoTienDaGD.MinimumWidth = 6;
-            this.TongSoTienDaGD.Name = "TongSoTienDaGD";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label4.Location = new System.Drawing.Point(460, 4);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(305, 38);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "Thông tin khách hàng";
-            // 
             // Form_KhachHang
             // 
             this.ClientSize = new System.Drawing.Size(1385, 892);
@@ -655,7 +655,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_KhachHang;
-        private Guna.UI2.WinForms.Guna2Button btn_TimKiem_Laptop;
+        private Guna.UI2.WinForms.Guna2Button btn_TimKiem_KhachHang;
         private Guna.UI2.WinForms.Guna2Button btn_Add_KhachHang;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;

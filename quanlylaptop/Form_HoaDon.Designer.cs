@@ -38,7 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_TimKiem_Laptop = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_TimKiem_HoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Add_HoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_HoaDon = new Guna.UI2.WinForms.Guna2DataGridView();
             this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,7 +86,7 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.btn_TimKiem_Laptop);
+            this.tabPage1.Controls.Add(this.btn_TimKiem_HoaDon);
             this.tabPage1.Controls.Add(this.btn_Add_HoaDon);
             this.tabPage1.Controls.Add(this.dgv_HoaDon);
             this.tabPage1.Location = new System.Drawing.Point(4, 4);
@@ -155,23 +155,23 @@
             this.label4.TabIndex = 40;
             this.label4.Text = "Thông tin hóa đơn";
             // 
-            // btn_TimKiem_Laptop
+            // btn_TimKiem_HoaDon
             // 
-            this.btn_TimKiem_Laptop.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
-            this.btn_TimKiem_Laptop.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiem_Laptop.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_TimKiem_Laptop.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_TimKiem_Laptop.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_TimKiem_Laptop.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            this.btn_TimKiem_Laptop.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_TimKiem_Laptop.ForeColor = System.Drawing.Color.White;
-            this.btn_TimKiem_Laptop.ImageSize = new System.Drawing.Size(52, 52);
-            this.btn_TimKiem_Laptop.Location = new System.Drawing.Point(1173, 79);
-            this.btn_TimKiem_Laptop.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_TimKiem_Laptop.Name = "btn_TimKiem_Laptop";
-            this.btn_TimKiem_Laptop.Size = new System.Drawing.Size(87, 49);
-            this.btn_TimKiem_Laptop.TabIndex = 20;
-            this.btn_TimKiem_Laptop.Text = "Tìm";
+            this.btn_TimKiem_HoaDon.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(67)))), ((int)(((byte)(108)))));
+            this.btn_TimKiem_HoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiem_HoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_TimKiem_HoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_TimKiem_HoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_TimKiem_HoaDon.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            this.btn_TimKiem_HoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_TimKiem_HoaDon.ForeColor = System.Drawing.Color.White;
+            this.btn_TimKiem_HoaDon.ImageSize = new System.Drawing.Size(52, 52);
+            this.btn_TimKiem_HoaDon.Location = new System.Drawing.Point(1173, 79);
+            this.btn_TimKiem_HoaDon.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_TimKiem_HoaDon.Name = "btn_TimKiem_HoaDon";
+            this.btn_TimKiem_HoaDon.Size = new System.Drawing.Size(87, 49);
+            this.btn_TimKiem_HoaDon.TabIndex = 20;
+            this.btn_TimKiem_HoaDon.Text = "Tìm";
             // 
             // btn_Add_HoaDon
             // 
@@ -225,7 +225,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_HoaDon.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgv_HoaDon.Location = new System.Drawing.Point(7, 246);
+            this.dgv_HoaDon.Location = new System.Drawing.Point(7, 199);
             this.dgv_HoaDon.Name = "dgv_HoaDon";
             this.dgv_HoaDon.RowHeadersVisible = false;
             this.dgv_HoaDon.RowHeadersWidth = 62;
@@ -235,7 +235,7 @@
             this.dgv_HoaDon.ShowCellToolTips = false;
             this.dgv_HoaDon.ShowEditingIcon = false;
             this.dgv_HoaDon.ShowRowErrors = false;
-            this.dgv_HoaDon.Size = new System.Drawing.Size(1251, 582);
+            this.dgv_HoaDon.Size = new System.Drawing.Size(1251, 629);
             this.dgv_HoaDon.TabIndex = 0;
             this.dgv_HoaDon.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_HoaDon.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -536,7 +536,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private Guna.UI2.WinForms.Guna2DataGridView dgv_HoaDon;
-        private Guna.UI2.WinForms.Guna2Button btn_TimKiem_Laptop;
+        private Guna.UI2.WinForms.Guna2Button btn_TimKiem_HoaDon;
         private Guna.UI2.WinForms.Guna2Button btn_Add_HoaDon;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;

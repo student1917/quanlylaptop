@@ -28,16 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_TimKiem_Laptop = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Add_NhaCungCap = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_PhieuNhapKho = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaNK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayNhapKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PTTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThaiThanhToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
             this.btn_Sua_PNK = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Xoa_PNK = new Guna.UI2.WinForms.Guna2Button();
@@ -53,15 +62,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.MaNK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayNhapKho = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PTTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThaiThanhToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_PhieuNhapKho)).BeginInit();
@@ -94,6 +94,30 @@
             this.tabPage1.Size = new System.Drawing.Size(1264, 831);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Information";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(890, 71);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(166, 18);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Nhập ngày nhập kho:";
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(893, 92);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(244, 36);
+            this.guna2DateTimePicker1.TabIndex = 41;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 10, 19, 13, 39, 20, 873);
             // 
             // label4
             // 
@@ -148,18 +172,18 @@
             this.dgv_PhieuNhapKho.AllowUserToDeleteRows = false;
             this.dgv_PhieuNhapKho.AllowUserToResizeColumns = false;
             this.dgv_PhieuNhapKho.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dgv_PhieuNhapKho.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_PhieuNhapKho.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_PhieuNhapKho.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_PhieuNhapKho.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_PhieuNhapKho.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(81)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_PhieuNhapKho.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_PhieuNhapKho.ColumnHeadersHeight = 80;
             this.dgv_PhieuNhapKho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgv_PhieuNhapKho.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -169,15 +193,15 @@
             this.ThanhTien,
             this.PTTT,
             this.TrangThaiThanhToan});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_PhieuNhapKho.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dgv_PhieuNhapKho.Location = new System.Drawing.Point(16, 250);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_PhieuNhapKho.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgv_PhieuNhapKho.Location = new System.Drawing.Point(16, 202);
             this.dgv_PhieuNhapKho.Name = "dgv_PhieuNhapKho";
             this.dgv_PhieuNhapKho.RowHeadersVisible = false;
             this.dgv_PhieuNhapKho.RowHeadersWidth = 62;
@@ -187,7 +211,7 @@
             this.dgv_PhieuNhapKho.ShowCellToolTips = false;
             this.dgv_PhieuNhapKho.ShowEditingIcon = false;
             this.dgv_PhieuNhapKho.ShowRowErrors = false;
-            this.dgv_PhieuNhapKho.Size = new System.Drawing.Size(1240, 582);
+            this.dgv_PhieuNhapKho.Size = new System.Drawing.Size(1240, 630);
             this.dgv_PhieuNhapKho.TabIndex = 0;
             this.dgv_PhieuNhapKho.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_PhieuNhapKho.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -210,6 +234,42 @@
             this.dgv_PhieuNhapKho.ThemeStyle.RowsStyle.Height = 24;
             this.dgv_PhieuNhapKho.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_PhieuNhapKho.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // MaNK
+            // 
+            this.MaNK.HeaderText = "Mã nhập kho";
+            this.MaNK.MinimumWidth = 8;
+            this.MaNK.Name = "MaNK";
+            // 
+            // MaNCC
+            // 
+            this.MaNCC.HeaderText = "Mã nhà cung cấp";
+            this.MaNCC.MinimumWidth = 6;
+            this.MaNCC.Name = "MaNCC";
+            // 
+            // NgayNhapKho
+            // 
+            this.NgayNhapKho.HeaderText = "Ngày nhập kho";
+            this.NgayNhapKho.MinimumWidth = 6;
+            this.NgayNhapKho.Name = "NgayNhapKho";
+            // 
+            // ThanhTien
+            // 
+            this.ThanhTien.HeaderText = "Thành tiền";
+            this.ThanhTien.MinimumWidth = 6;
+            this.ThanhTien.Name = "ThanhTien";
+            // 
+            // PTTT
+            // 
+            this.PTTT.HeaderText = "Phương thức thanh toán";
+            this.PTTT.MinimumWidth = 6;
+            this.PTTT.Name = "PTTT";
+            // 
+            // TrangThaiThanhToan
+            // 
+            this.TrangThaiThanhToan.HeaderText = "Trạng thái thanh toán";
+            this.TrangThaiThanhToan.MinimumWidth = 6;
+            this.TrangThaiThanhToan.Name = "TrangThaiThanhToan";
             // 
             // tabPage2
             // 
@@ -236,6 +296,20 @@
             this.tabPage2.Size = new System.Drawing.Size(1264, 831);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Options";
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(536, 227);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(459, 42);
+            this.guna2DateTimePicker2.TabIndex = 28;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 10, 19, 13, 51, 4, 656);
             // 
             // label19
             // 
@@ -452,80 +526,6 @@
             this.label6.Size = new System.Drawing.Size(127, 28);
             this.label6.TabIndex = 0;
             this.label6.Text = "Mã nhập kho";
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(893, 92);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(244, 36);
-            this.guna2DateTimePicker1.TabIndex = 41;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 10, 19, 13, 39, 20, 873);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(890, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 18);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Nhập ngày nhập kho:";
-            // 
-            // MaNK
-            // 
-            this.MaNK.HeaderText = "Mã nhập kho";
-            this.MaNK.MinimumWidth = 8;
-            this.MaNK.Name = "MaNK";
-            // 
-            // MaNCC
-            // 
-            this.MaNCC.HeaderText = "Mã nhà cung cấp";
-            this.MaNCC.MinimumWidth = 6;
-            this.MaNCC.Name = "MaNCC";
-            // 
-            // NgayNhapKho
-            // 
-            this.NgayNhapKho.HeaderText = "Ngày nhập kho";
-            this.NgayNhapKho.MinimumWidth = 6;
-            this.NgayNhapKho.Name = "NgayNhapKho";
-            // 
-            // ThanhTien
-            // 
-            this.ThanhTien.HeaderText = "Thành tiền";
-            this.ThanhTien.MinimumWidth = 6;
-            this.ThanhTien.Name = "ThanhTien";
-            // 
-            // PTTT
-            // 
-            this.PTTT.HeaderText = "Phương thức thanh toán";
-            this.PTTT.MinimumWidth = 6;
-            this.PTTT.Name = "PTTT";
-            // 
-            // TrangThaiThanhToan
-            // 
-            this.TrangThaiThanhToan.HeaderText = "Trạng thái thanh toán";
-            this.TrangThaiThanhToan.MinimumWidth = 6;
-            this.TrangThaiThanhToan.Name = "TrangThaiThanhToan";
-            // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(536, 227);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(459, 42);
-            this.guna2DateTimePicker2.TabIndex = 28;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 10, 19, 13, 51, 4, 656);
             // 
             // Form_PhieuNhapKho
             // 
