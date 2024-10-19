@@ -10,3 +10,10 @@ C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\bin\Debug\Guna.UI2.dll
 C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.csproj.CopyComplete
 C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.exe
 C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.pdb
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form1.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_DangNhap.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_HoaDon.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_KhachHang.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_NhaCungCap.resources
+C:\Users\TAM\source\repos\quanlylaptop\quanlylaptop\obj\Debug\quanlylaptop.Form_PhieuNhapKho.resources
